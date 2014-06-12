@@ -9,15 +9,17 @@ sudo -H npm install -g meteorite
 
 #install lakia and its dependecies for testing
 
-#install mongodb
-sudo apt-get -y install mongodb
+#install mongodb and libfontconfig
+sudo apt-get -y install mongodb libfontconfig
 
 #install phantomjs
 cd tmp
 wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-1.9.7-linux-x86_64.tar.bz2
 tar -xvf phantomjs-1.9.7-linux-x86_64.tar.bz2
-mv phantomjs-1.9.7-linux-x86_64 /opt
-export PATH=$PATH:/opt/phantomjs-1.9.7-linux-x86_64/bin
+sudo mv phantomjs-1.9.7-linux-x86_64 /usr/local/share
+sudo ln -s /usr/local/share/phantomjs-1.9.7-linux-x86_64/bin/phantomjs /usr/bin/phantomjs
+
+
 
 #install laika
 sudo npm install -g laika
