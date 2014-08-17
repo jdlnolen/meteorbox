@@ -24,6 +24,13 @@ sudo ln -s /usr/local/share/phantomjs-1.9.7-linux-x86_64/bin/phantomjs /usr/bin/
 #install laika
 sudo npm install -g laika
 
+#install mocha
+sudo npm install -g mocha
+
+#install zombie.js
+sudo npm install -g zombie
+
+
 #tests for successful install
 
 #assert function for testing
@@ -42,3 +49,5 @@ assert mrt
 assert mongod
 assert phantomjs
 assert laika
+assert mocha
+
