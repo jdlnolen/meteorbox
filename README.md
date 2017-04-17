@@ -12,7 +12,7 @@ Built for testing, so it has laika, mocha, and zombie also pre-installed:
 
 https://github.com/arunoda/laika
 
-http://visionmedia.github.io/mocha/
+http://mochajs.org/
 
 http://zombie.labnotes.org/
 
